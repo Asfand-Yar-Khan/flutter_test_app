@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   inactiveColor: Colors.green,
                 ),
                 BarItem(
-                  icon: Icons.save,
+                  icon: Icons.bookmark,
                   title: 'Save',
                   activeColor: Colors.blue,
                   inactiveColor: Colors.red,
@@ -116,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   title: 'Discover',
                 ),
                 BarItem(
-                  icon: Icons.save,
+                  icon: Icons.bookmark,
                   title: 'Save',
                 ),
                 BarItem(
@@ -602,25 +602,31 @@ List<Widget> _listOfWidget = <Widget>[
    
   Container(
     alignment: Alignment.center,
-    child: const Icon(
-      Icons.bolt,
-      size: 56,
-      color: Colors.brown,
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const Icon(
+          Icons.bookmark,
+          size: 56,
+          color: Colors.brown,
+        ),
+        Text("Comming Soon")
+      ],
     ),
   ),
   Container(
     alignment: Alignment.center,
     child:
-    
-    // ElevatedButton(o child: Text("Open Dialogue"), onPressed: () => {
-    //   showDialog(context: context, builder: (context)=> const AlertDialog(
-    //     title: Text("Coming soon"),
-    //   ))
-    // },);
-      Icon(
-      Icons.tune_rounded,
-      size: 56,
-      color: Colors.brown,
+      Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(
+          Icons.person_2,
+          size: 56,
+          color: Colors.brown,
     ),
+    Text("Comming Soon")
+        ],
+      ),
   ),
 ];
